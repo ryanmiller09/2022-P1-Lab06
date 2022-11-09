@@ -19,7 +19,18 @@ public class Lab06vst extends Applet
 
 
         // Draw Random Lines
+        for (int k = 0; k <= 100; k++) {
+            Random rand = new Random();
 
+            int x1 = rand.nextInt(390) + 10;
+            int y1 = rand.nextInt(280) + 10;
+            int width = rand.nextInt(380) + 10;
+            int height = rand.nextInt(280) + 10;
+
+           g.drawLine(x1,y1,width,height);
+
+
+        }
 
 
 
@@ -31,7 +42,19 @@ public class Lab06vst extends Applet
 
 
         // Draw Random Circles
+        for (int k = 0; k <= 100; k++) {
+            Random rand = new Random();
 
+            int x1 = rand.nextInt(200);
+            int y1 = rand.nextInt(280);
+            int width = rand.nextInt(200);
+            int height = width;
+
+            g.drawOval(x1,y1,width,height);
+
+
+
+        }
 
 
 
