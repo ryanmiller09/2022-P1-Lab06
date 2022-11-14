@@ -45,8 +45,8 @@ public class Lab06vst extends Applet
         for (int k = 0; k <= 100; k++) {
             Random rand = new Random();
 
-            int x1 = rand.nextInt(200);
-            int y1 = rand.nextInt(280);
+            int x1 = rand.nextInt(200)+10;
+            int y1 = rand.nextInt(40)+340;
             int width = rand.nextInt(200);
             int height = width;
 
