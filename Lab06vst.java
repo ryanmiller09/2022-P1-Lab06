@@ -27,6 +27,10 @@ public class Lab06vst extends Applet
             int width = rand.nextInt(380) + 10;
             int height = rand.nextInt(280) + 10;
 
+            int red = rand.nextInt(256);
+            int blue = rand.nextInt(256);
+            int green = rand.nextInt(256);
+            g.setColor(new Color(red,green,blue));
            g.drawLine(x1,y1,width,height);
 
 
@@ -36,7 +40,21 @@ public class Lab06vst extends Applet
 
 
         // Draw Random Squares
+        for(int k = 0; k <= 100; k++){
+            Random rand = new Random();
 
+            int x1 = rand.nextInt(340) + 400;
+            int y1 = rand.nextInt(240) + 10;
+            int width = 50;
+            int height = 50;
+
+            int red = rand.nextInt(256);
+            int blue = rand.nextInt(256);
+            int green = rand.nextInt(256);
+            g.setColor(new Color(red,green,blue));
+           g.fillRect(x1,y1,width,height);
+
+        }
 
 
 
@@ -45,11 +63,15 @@ public class Lab06vst extends Applet
         for (int k = 0; k <= 100; k++) {
             Random rand = new Random();
 
-            int x1 = rand.nextInt(200)+10;
-            int y1 = rand.nextInt(40)+340;
+            int x1 = rand.nextInt(185)+10;
+            int y1 = rand.nextInt(65)+320;
             int width = rand.nextInt(200);
             int height = width;
 
+            int red = rand.nextInt(256);
+            int blue = rand.nextInt(256);
+            int green = rand.nextInt(256);
+            g.setColor(new Color(red,green,blue));
             g.drawOval(x1,y1,width,height);
 
 
